@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="./confettiBtn.css" rel="stylesheet">
+  <script src="./index.js" defer></script>
+  <script src="./canvas.js" defer></script>
+  <script src="./confettiBtn.js" defer></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button class="btn span-two" data-all-clear >AC</button>
+    <button class="btn" data-delete>DEL</button>
+    <button class="btn" data-modify>%</button>
+    <button class="btn" data-modify>1/x</button>
+    <button class="btn" data-modify>x^2</button>
+    <button class="btn" data-modify>2√x</button>
+    <button class="btn" data-operation>/</button>
+    <button class="btn" data-number onclick="animateButton()">1</button>
+    <button class="btn" data-number>2</button>
+    <button class="btn" data-number>3</button>
+    <button class="btn" data-operation>*</button>
+    <button class="btn" data-number>4</button>
+    <button class="btn" data-number>5</button>
+    <button class="btn" data-number>6</button>
+    <button class="btn" data-operation>+</button>
+    <button class="btn" data-number>7</button>
+    <button class="btn" data-number>8</button>
+    <button class="btn" data-number>9</button>
+    <button class="btn" data-operation>-</button>
+    <button class="btn" data-number>.</button>
+    <button class="btn" data-number>0</button>
+    <button class="btn span-two" data-equals >=</button>
+  </div>
+</body>
+</html>
